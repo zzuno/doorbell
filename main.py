@@ -26,4 +26,4 @@ def notify():
     except Exception as e:
         return f"Exception during request: {str(e)}", 500
 
-    return '🔔 알림 전송 완료', 200
+    return '🔔 방문 요청이 접수되었습니다. 잠시만 기다려 주세요.', 200
