@@ -17,7 +17,7 @@ def notify():
         return 'Missing credentials', 500
 
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    data = {"chat_id": chat_id, "text": "🚪 QR 코드가 스캔되었습니다!"}
+    data = {"chat_id": chat_id, "text": "🚪 누군가 문 앞에서 기다리고 있어요!"}
 
     try:
         response = requests.post(url, data=data)
